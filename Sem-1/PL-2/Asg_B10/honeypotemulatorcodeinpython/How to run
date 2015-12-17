@@ -1,0 +1,10 @@
+INSTRUCTION TO EXECUTE THE CODE
+********************************
+
+1) execute admin.py first.
+2) execute honeypot.py second.
+3) execute attacker.py last
+
+$ 'tosend.txt' contains the message to be sent by attacker to honeypot.
+$ honeypot recieves attacker's message in 'gotit.txt'.
+$ 'attacker.txt' contains the report of attack sent by honeypot to the admin.

@@ -1,0 +1,283 @@
+////////////////////////////////////////////////////////////////////////////////////////////
+Delivered-To: hardikarshriya@yahoo.com
+Received: by 10.202.169.2 with SMTP id s2csp685072oie;
+        Sun, 14 Jun 2015 05:31:34 -0700 (PDT)
+X-Received: by 10.70.95.228 with SMTP id dn4mr28672794pdb.89.1434285094159;
+        Sun, 14 Jun 2015 05:31:34 -0700 (PDT)
+Return-Path: <phoenix@ilifestore.in>
+Received: from solutionsindia.biz (mail.ilifestore.in. [202.52.134.193])
+        by mx.google.com with ESMTPS id xg10si13249877pbc.254.2015.06.14.05.31.32
+        for <hardikarshriya@yahoo.com>
+        (version=TLSv1 cipher=RC4-SHA bits=128/128);
+        Sun, 14 Jun 2015 05:31:33 -0700 (PDT)
+Received-SPF: pass (google.com: domain of phoenix@ilifestore.in designates 202.52.134.193 as permitted sender) client-ip=202.52.134.193;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of phoenix@ilifestore.in designates 202.52.134.193 as permitted sender) smtp.mail=phoenix@ilifestore.in
+X-No-Relay: not in my network
+Received: from LenovoPC (unknown [103.8.195.81])
+	by solutionsindia.biz (Postfix) with ESMTPSA id 0AACD781D37
+	for <hardikarshriya@yahoo.com>; Sun, 14 Jun 2015 18:00:50 +0530 (IST)
+From: "Phoenix" <phoenix@ilifestore.in>
+To: <hardikarshriya@yahoo.com>
+References: 
+In-Reply-To: 
+Subject: LENOVO SERVICE CENTRE PUNE ADDRESS ( Smart Phone )
+Date: Sun, 14 Jun 2015 18:01:32 +0530
+Message-ID: <001a01d0a69e$0cd602e0$268208a0$@ilifestore.in>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_001B_01D0A6CC.26956AD0"
+X-Mailer: Microsoft Outlook 14.0
+Thread-Index: AdCLvGiCgD0SZcYfRlW932UY9SH7BwJcgKzQAfwcYbABAm+2IABlULPAAMlncbAALp708A==
+Content-Language: en-in
+////////////////////////////////////////////////////////////////////////////////////////////
+Delivered-To: hardikarshriya@yahoo.com
+Received: by 10.202.169.2 with SMTP id s2csp3556697oie;
+        Thu, 11 Jun 2015 10:12:55 -0700 (PDT)
+X-Received: by 10.66.163.69 with SMTP id yg5mr15916076pab.150.1434042775558;
+        Thu, 11 Jun 2015 10:12:55 -0700 (PDT)
+Return-Path: <3lsF5VQ8KBrEZeXiVjj-jlggfikXffXcV.TfdeianXYXdRZc.Tfd@scoutcamp.bounces.google.com>
+Received: from mail-pd0-x247.google.com (mail-pd0-x247.google.com. [2607:f8b0:400e:c02::247])
+        by mx.google.com with ESMTPS id bd4si763852pbb.61.2015.06.11.10.12.54
+        for <hardikarshriya@yahoo.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 11 Jun 2015 10:12:55 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 3lsF5VQ8KBrEZeXiVjj-jlggfikXffXcV.TfdeianXYXdRZc.Tfd@scoutcamp.bounces.google.com designates 2607:f8b0:400e:c02::247 as permitted sender) client-ip=2607:f8b0:400e:c02::247;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of 3lsF5VQ8KBrEZeXiVjj-jlggfikXffXcV.TfdeianXYXdRZc.Tfd@scoutcamp.bounces.google.com designates 2607:f8b0:400e:c02::247 as permitted sender) smtp.mail=3lsF5VQ8KBrEZeXiVjj-jlggfikXffXcV.TfdeianXYXdRZc.Tfd@scoutcamp.bounces.google.com;
+       dkim=pass header.i=@google.com;
+       dmarc=pass (p=REJECT dis=NONE) header.from=google.com
+Received: by mail-pd0-x247.google.com with SMTP id k3so22043445pdh.0
+        for <hardikarshriya@yahoo.com>; Thu, 11 Jun 2015 10:12:54 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20120113;
+        h=mime-version:reply-to:precedence:list-unsubscribe:feedback-id
+         :message-id:date:subject:from:to:content-type;
+        bh=Xhl5KGGuZrDj6HO5rRAt/tnVQbS5jOAbC5UKQvYKc1E=;
+        b=cWkHx7zjBDmBNrkQ41WXXafllEQARKJIxBoBnNzS9BlFYvK7yap2eT1SFyu8wn6lMQ
+         hkgKFIEIurjUGkQOUaFA3Dn7lzhAnazFMhQXvPjx4dqYsXhwRh6+XIBzdVu26euLH8fw
+         J3F0MajCO4IBopO9auyqunxiY4vprnGoAsJ8VCLVsDWOd7RRJDAuYPkBok9T1zznFFko
+         G/0L6LhAeOXfR1szpVllXl5u5F/auJvkqespFFjPPspflvcgyE/qsHkR5oA0mXSeOs6O
+         u13cceGMpKWJMr602751yWdOVddC1mXX0ic3EBHusINstSzPeui4Nx7tl3MwLM56daL/
+         07Pg==
+MIME-Version: 1.0
+X-Received: by 10.66.139.41 with SMTP id qv9mr16227676pab.35.1434042774833;
+ Thu, 11 Jun 2015 10:12:54 -0700 (PDT)
+Reply-To: Niantic Project Operations <ingress-support@google.com>
+X-Google-Id: 5569351470022656
+Precedence: bulk
+List-Unsubscribe: <https://www.google.com/appserve/mkt/p/7-b9PL4PQQ7uB-HHdAtxiwVxapp4rjO3GpbuWMGZryW-rT0X5catm06Es8FnF-r-h6ZTKoIFUdIffqBcf90KEoyRCCkqxFrAWd51YmAXanZxMmbI53k6DpLMS4Pw-lnrbtTrEzFOiV-EE2g52yr_rVwvI7zhQODoZXpRB_IBSbae5YeAEGVJWv7db_OZtsUvp8JiP5U1W-AXnRFGWICcjX1W57Vkj0m1>
+Feedback-ID: Len-US:D1622015:C619501:gamma
+Message-ID: <1e3464969a7ac9f5.1434042773700.696706.619501.en-US.439dd8cfb47450f2@google.com>
+Date: Thu, 11 Jun 2015 17:12:54 +0000
+Subject: The Amazing Ingress Community
+From: Niantic Project Operations <ingress-support@google.com>
+To: hardikarshriya@yahoo.com
+Content-Type: multipart/alternative; boundary=001a113318c42fcbb10518411a36
+
+--001a113318c42fcbb10518411a36
+Content-Type: text/plain; charset=UTF-8; format=flowed; delsp=yes
+Content-Transfer-Encoding: base64
+////////////////////////////////////////////////////////////////////////////////////////////
+Delivered-To: hardikarshriya@yahoo.com
+Received: by 10.202.225.215 with SMTP id y206csp1667167oig;
+        Mon, 4 May 2015 05:30:08 -0700 (PDT)
+X-Received: by 10.55.22.170 with SMTP id 42mr44333398qkw.47.1430742608242;
+        Mon, 04 May 2015 05:30:08 -0700 (PDT)
+Return-Path: <0000014d1ee7a4d9-401958db-9b53-46ad-bfb6-83f8425c1d0f-000000@amazonses.com>
+Received: from a14-115.smtp-out.amazonses.com (a14-115.smtp-out.amazonses.com. [54.240.14.115])
+        by mx.google.com with ESMTPS id 194si34513858qhs.8.2015.05.04.05.30.08
+        for <hardikarshriya@yahoo.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Mon, 04 May 2015 05:30:08 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 0000014d1ee7a4d9-401958db-9b53-46ad-bfb6-83f8425c1d0f-000000@amazonses.com designates 54.240.14.115 as permitted sender) client-ip=54.240.14.115;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of 0000014d1ee7a4d9-401958db-9b53-46ad-bfb6-83f8425c1d0f-000000@amazonses.com designates 54.240.14.115 as permitted sender) smtp.mail=0000014d1ee7a4d9-401958db-9b53-46ad-bfb6-83f8425c1d0f-000000@amazonses.com;
+       dkim=pass header.i=@dropboxmail.com;
+       dmarc=pass (p=REJECT dis=NONE) header.from=dropboxmail.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=ug7nbtf4gccmlpwj322ax3p6ow6yfsug; d=amazonses.com; t=1430742607;
+	h=Content-Type:MIME-Version:From:To:CC:Subject:Date:Message-ID:Feedback-ID;
+	bh=tgwMLy77cdXfyQMJ1mgykXUyFUOCJXOS4WpvaR4ZDY0=;
+	b=lnhpKgpPSSXw9rsF09BRp/AZdfz2i3NRn5b+AqtxKlB2AQuuQM2l6vqKHz1BSfnM
+	/c7QC+RHx6UqRKUVaX7hcubMvfB9M6VjQsSflRnyiotQVN4SJK9t9OCMUirB3cCvbW+
+	y/pFDEJNZAXBbTS3pblE/b7pdIa6fzTixV4o0fwM=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=wzztzkjlnm6ouggnpmlymvppmeqc5wkr; d=dropboxmail.com;
+	t=1430742607;
+	h=Content-Type:MIME-Version:From:To:CC:Subject:Date:Message-ID;
+	bh=tgwMLy77cdXfyQMJ1mgykXUyFUOCJXOS4WpvaR4ZDY0=;
+	b=cLmb9KMi/v7mHKlNM0rSJLB0BFIOLqaz0Tbce51RZvB0hW78Zn8FbRK4f495i40o
+	PBCfl2LvQ9FeiIMnvytbG6QXOsXuIiBeHaush7djjsWl79XGExv7qiO4ppwTXk8V5HX
+	o7jO0KPw2Am6RkmezSbc5ZM3OshSUQII7KoL+A40=
+Content-Type: multipart/alternative;
+ boundary="===============6330639978626432336=="
+MIME-Version: 1.0
+From: Dropbox <no-reply@dropboxmail.com>
+To: hardikarshriya@yahoo.com
+CC: 
+Subject: =?utf-8?q?Update=3A_Changes_to_better_serve_our_users_around_the_world?=
+Date: Mon, 4 May 2015 12:30:07 +0000
+Message-ID: <0000014d1ee7a4d9-401958db-9b53-46ad-bfb6-83f8425c1d0f-000000@email.amazonses.com>
+X-Dropbox-Message-ID: 4527544676284970282
+X-SES-Outgoing: 2015.05.04-54.240.14.115
+Feedback-ID: 1.us-east-1.uUN5d9sk1K8bEZSQiKEFyDZoOChsAq1y3Ge0qhfYGbc=:AmazonSES
+////////////////////////////////////////////////////////////////////////////////////////////
+Delivered-To: hardikarshriya@yahoo.com
+Received: by 10.202.218.10 with SMTP id r10csp2072575oig;
+        Tue, 14 Apr 2015 09:16:31 -0700 (PDT)
+X-Received: by 10.60.112.65 with SMTP id io1mr16943299oeb.66.1429028189611;
+        Tue, 14 Apr 2015 09:16:29 -0700 (PDT)
+Return-Path: <shivanisinghpayal@gmail.com>
+Received: from mail-ob0-x234.google.com (mail-ob0-x234.google.com. [2607:f8b0:4003:c01::234])
+        by mx.google.com with ESMTPS id c2si674761oih.6.2015.04.14.09.16.27
+        for <hardikarshriya@yahoo.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 14 Apr 2015 09:16:28 -0700 (PDT)
+Received-SPF: pass (google.com: domain of shivanisinghpayal@gmail.com designates 2607:f8b0:4003:c01::234 as permitted sender) client-ip=2607:f8b0:4003:c01::234;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of shivanisinghpayal@gmail.com designates 2607:f8b0:4003:c01::234 as permitted sender) smtp.mail=shivanisinghpayal@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-ob0-x234.google.com with SMTP id eb7so1303342obb.3
+        for <hardikarshriya@yahoo.com>; Tue, 14 Apr 2015 09:16:27 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=bpVuUHSRf+70EHQPvSeUdrZtm/xXh1PsGmUIpPe+txg=;
+        b=Y9qGSemc/LCkD0KmcI+NaoLITX0b08jftbDiDWDwmHGkW3EjuEenAW0o+J0+NhU/8D
+         mkIK8TY/cDzXhe+AL/6MJL202phzVRQ/QHc0tLBIS110PPIJpjtxubEchMiaDPjZujVO
+         ZBUySVQiDNdx9PSMmXKEhFiePNy8OQDzm2v+M3+swZRXZjYjK9zCWO/eCYxa1Jk/UoC8
+         /osxTTisYJqoDU/Q1mOTzjfgox7Zsmi2Ha9bYuRNc5NdEhN9jDqwJ4+cZ8CB8C5hu6Qu
+         DjfjOb9d0tcNRI5eR0gh9JqS8LAWAmvlW0c0ahYzb4mtNny1QuFWfGZcOCUNxb5SgvcP
+         8YRQ==
+MIME-Version: 1.0
+X-Received: by 10.202.187.5 with SMTP id l5mr12045206oif.16.1429028186073;
+ Tue, 14 Apr 2015 09:16:26 -0700 (PDT)
+Received: by 10.76.166.138 with HTTP; Tue, 14 Apr 2015 09:16:25 -0700 (PDT)
+Received: by 10.76.166.138 with HTTP; Tue, 14 Apr 2015 09:16:25 -0700 (PDT)
+In-Reply-To: <CAKwXxr4EhnYOaGDkOY4D_nX2E4vU5JKOfybceeEwsgBOu=zWig@mail.gmail.com>
+References: <CAKwXxr4EhnYOaGDkOY4D_nX2E4vU5JKOfybceeEwsgBOu=zWig@mail.gmail.com>
+Date: Tue, 14 Apr 2015 21:46:25 +0530
+Message-ID: <CAKwXxr7oJ5M2Wat-UUy=skS+Bm+EQbJPv8M9ojsFdF6RcA4-zQ@mail.gmail.com>
+Subject: Fwd:
+From: Shivani Singh <shivanisinghpayal@gmail.com>
+To: Shriya Hardikar <hardikarshriya@yahoo.com>
+Content-Type: multipart/mixed; boundary=001a113ccb247179970513b18d92
+
+--001a113ccb247179970513b18d92
+Content-Type: multipart/alternative; boundary=001a113ccb247179910513b18d90
+
+--001a113ccb247179910513b18d90
+Content-Type: text/plain; charset=UTF-8
+
+---------- Forwarded message ----------
+From: "Shivani Singh" <shivanisinghpayal@gmail.com>
+Date: Mar 27, 2015 9:01 PM
+Subject:
+To: "Yash Gupta" <yash.gupta0695@gmail.com>
+Cc:
+
+http://djvu.sourceforge.net/
+You'll need that to view it
+
+--001a113ccb247179910513b18d90
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div class=3D"gmail_quote">---------- Forwarded message ----------<br>From:=
+ &quot;Shivani Singh&quot; &lt;<a href=3D"mailto:shivanisinghpayal@gmail.co=
+m">shivanisinghpayal@gmail.com</a>&gt;<br>Date: Mar 27, 2015 9:01 PM<br>Sub=
+ject: <br>To: &quot;Yash Gupta&quot; &lt;<a href=3D"mailto:yash.gupta0695@g=
+mail.com">yash.gupta0695@gmail.com</a>&gt;<br>Cc: <br><br type=3D"attributi=
+on"><div dir=3D"ltr"><div><a href=3D"http://djvu.sourceforge.net/" target=
+=3D"_blank">http://djvu.sourceforge.net/</a><br></div><div>You&#39;ll need =
+that to view it</div></div>
+</div>
+
+--001a113ccb247179910513b18d90--
+--001a113ccb247179970513b18d92
+Content-Type: application/octet-stream; 
+	name="[David_F._Rogers]_Procedural_Elements_of_Computer_(BookFi.org).djvu"
+Content-Disposition: attachment; 
+	filename="[David_F._Rogers]_Procedural_Elements_of_Computer_(BookFi.org).djvu"
+Content-Transfer-Encoding: base64
+X-Attachment-Id: f_i7rqkyug0
+////////////////////////////////////////////////////////////////////////////////////////////
+Delivered-To: hardikarshriya@yahoo.com
+Received: by 10.202.193.70 with SMTP id r67csp1616088oif;
+        Mon, 23 Feb 2015 19:51:41 -0800 (PST)
+X-Received: by 10.50.129.9 with SMTP id ns9mr17243307igb.24.1424749900683;
+        Mon, 23 Feb 2015 19:51:40 -0800 (PST)
+Return-Path: <bounces+4806-4b65-nrjwgh=gmail.com@email.quora.com>
+Received: from o5.email.quora.com (o5.email.quora.com. [167.89.12.228])
+        by mx.google.com with ESMTPS id rt1si792342igb.43.2015.02.23.19.51.40
+        for <hardikarshriya@yahoo.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 23 Feb 2015 19:51:40 -0800 (PST)
+Received-SPF: pass (google.com: domain of bounces+4806-4b65-nrjwgh=gmail.com@email.quora.com designates 167.89.12.228 as permitted sender) client-ip=167.89.12.228;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of bounces+4806-4b65-nrjwgh=gmail.com@email.quora.com designates 167.89.12.228 as permitted sender) smtp.mail=bounces+4806-4b65-nrjwgh=gmail.com@email.quora.com;
+       dkim=pass header.i=@email.quora.com;
+       dmarc=pass (p=QUARANTINE dis=NONE) header.from=quora.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed; d=email.quora.com; 
+	h=content-type:mime-version:from:to:subject:list-unsubscribe; 
+	s=smtpapi; bh=ImomH8cajsthZO9mNa56xFrrKK8=; b=IyWmIQKyYl7DXS3vaF
+	8dFA0tJPigCXm4Y99SRQfIJdVb8sEzvT13I1b4xgSxz7kmRPT/650onhlIRW3UHd
+	t8JW8ho0E+hUqhtLsiz7YoUc0XN91nOdR29kSPoa3CcibkLF+99mE7NhM1A/58x/
+	8WCMHVDnZgVOuvj38E4hQ0rBs=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=quora.com; 
+	h=content-type:mime-version:from:to:subject:list-unsubscribe; 
+	q=dns; s=smtpapi; b=qwgM7KZUtlcQzebjMK09wKnTi9cLQV2JEv8269f3bhji
+	1fCwBFWC5mDT8ti7JpbPFSRDDlrV52ENOif6rC+z0v7QCExV8FYPfevBFivJVnyZ
+	iRPkD8xWg3AHvfKLu2b0rFwO893FLi9a+6yTY4OY4dugnQCj3KHI8pFS0z6a7+U=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed; d=sendgrid.info; 
+	h=content-type:mime-version:from:to:subject:list-unsubscribe:x-feedback-id; 
+	s=smtpapi; bh=ImomH8cajsthZO9mNa56xFrrKK8=; b=p3qjkgINrVCfAZI87K
+	EG6ArK/CE0wpv4Bd/0vnK5HQR9HdoMiuQtrjKALNqSqq5FhKVaOp8sjj5AkygAig
+	0TDWFmDOHvzUV+nSlXUQI6n/73HJZMPELzzdapapZnffNZdkNTWlRMLt9XDUXsjj
+	UBUeFyBORh3sw1sCLdIEUUKec=
+Received: by filter0151p1mdw1.sendgrid.net with SMTP id filter0151p1mdw1.2075.54EBF5486
+        2015-02-24 03:51:38.103691124 +0000 UTC
+Received: from [10.0.5.190] (unknown [54.86.113.29])
+	by ismtpd-035 (SG) with ESMTP id 14bb9b628f2.7502.16e81
+	for <hardikarshriya@yahoo.com>; Tue, 24 Feb 2015 03:51:37 +0000 (UTC)
+Content-Type: multipart/alternative; boundary="===============1260261532=="
+MIME-Version: 1.0
+From: Quora Digest <digest-noreply@quora.com>
+To: hardikarshriya@yahoo.com
+Subject: How is becoming a billionaire even possible, chronologically? - Quora
+List-Unsubscribe: <http://www.quora.com/email_optout/qemail_optout?email_track_id=FbfYkzfEu0iabhsUlyFlxA%3D%3D&code=86a01829e3f85173d121ac30352d66ad&type=2&email=nrjwgh%40gmail.com>
+Message-ID: <14bb9b628f2.7502.16e81@ismtpd-035>
+Date: Tue, 24 Feb 2015 03:51:38 +0000 (UTC)
+X-SG-EID: /g/ZreMnw6CabxtAt8C9R4pVV+SXTyesNwBYYX30SKA7soX6KOdzJ+qqQxz/PpuPcuureH5zPZiPbm
+ r5r7kXrQAaa+1+CQQJJDdfzYxbCs3ul1TP6U9GAPdTK+52J+4q4ZlRcYR/lUdFiapXhHfFVbLIZiNv
+ qDo/dybPIcG2E6k=
+X-Feedback-ID: 4806:E0LXNvglEZJ7+yvA8NLSFCOcASHhTEsuUuGwmWJwXz4=:E0LXNvglEZJ7+yvA8NLSFCOcASHhTEsuUuGwmWJwXz4=:SG
+/////////////////////////////////////////////////////////////////////////////////
+x-store-info:4r51+eLowCe79NzwdU2kR3P+ctWZsO+J
+Authentication-Results: hotmail.com; spf=none (sender IP is 219.94.251.51) smtp.mailfrom=fizsjborqdiclsipjcgp@mail2dominic.com; dkim=none header.d=mail2dominic.com; x-hmca=none header.id=fizsjborqdiclsipjcgp@mail2dominic.com
+X-SID-PRA: fizsjborqdiclsipjcgp@mail2dominic.com
+X-AUTH-Result: NONE
+X-SID-Result: NONE
+X-Message-Status: n:n
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0yO1NDTD02
+X-Message-Info: 3c21WZ1hAltI9DuizMAEE41BI5AyVQJy5WKTrkRtozy7n8uROmdGq+3pubt3grFujCieWzh3Zevf2bymWGUkI0pLxCYKFPde3etKNxDW3QGuQLAHJ9TuMyrvtjkyG9zHju49UHYUdwmqqARynkq2sK26xgoeC86MaJFXi+5+WlxAjdEhj8uwjBT3pqqMzKpvYCdWQJMWYSkSy/zsITn7PVMcrOK1lghH/KTW0p4nwfM=
+Received: from o-tltc.info ([219.94.251.51]) by BLU004-MC1F12.hotmail.com with Microsoft SMTPSVC(7.5.7601.23008);
+	 Fri, 26 Jun 2015 07:57:19 -0700
+Puerto-Calcutta-Blurring: 96466
+Content-Transfer-Encoding: 7bit
+Date: Fri, 26 Jun 2015 23:57:19 +0000
+Subject: Have a nice day Shriya Live Here YouCanOrder Exclusive Medicines
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Shadings-Romanizers-Bulwark: 5a536839a384548
+From: Janet <fizsjborqdiclsipjcgp@mail2dominic.com>
+To: neeraj_live@hotmail.com
+Dildo-Interacted: 4467
+Message-ID: <7EABA191DD1dB.4cC343DaD6f.f81fF6f6@mail2dominic.com>
+Individualism-Reintroducing: 6c884e54
+Return-Path: fizsjborqdiclsipjcgp@mail2dominic.com
+X-OriginalArrivalTime: 26 Jun 2015 14:57:19.0278 (UTC) FILETIME=[66235CE0:01D0B020]
+
