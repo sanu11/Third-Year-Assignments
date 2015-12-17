@@ -1,0 +1,79 @@
+#include<iostream>
+#include<stdlib.h>
+using namespace std;
+class bootableusb
+{
+public:
+	void formatusb();
+	void isocopy();
+};
+void bootableusb::formatusb()
+{
+	char ch;
+	cout<<"\n!!!!!!Please take backup of files of your USB as formating process will erase everything!!!!!!\n";
+	cout<<"\nDo you want still to continue(y/Y/n/N)=";
+	cin>>ch;
+	if(ch=='y'||ch=='Y')
+	{
+		cout<<"\n";
+		string path,umount,ntfs;
+		system("blkid");
+		cout<<"\nEnter path of USB=";
+		cin>>path;
+		cout<<"\n";
+		umount="umount "+path;
+		ntfs="mkntfs "+path;
+		system(umount.c_str());
+		system(ntfs.c_str());
+	}
+	else
+		return;
+}
+
+void bootableusb::isocopy()
+{  
+	char ch;
+	cout<<"\n!!!!!!Please take backup of files of your USB as this USB bootable process will erase everything!!!!!!\n";
+	cout<<"\nDo you still want to continue(y/Y/n/N)=";
+	cin>>ch;
+	if(ch=='y'||ch=='Y')
+	{
+		string copyiso,path,eject;
+		cout<<"\n";
+		system("blkid");
+		cout<<"\nEnter path of USB=";
+		cin>>path;
+		cout<<"\n";
+		copyiso="dd if=/home/Nishant/fedora19.iso of="+path;
+		eject="eject "+path;
+		system(copyiso.c_str());	
+		system(eject.c_str());
+		cout<<"\n!!!!!!Your USB is now bootable and can remove it from port!!!!!!\n";
+	}
+	else
+		return;
+}
+
+int main()
+{
+	int ch;
+	bootableusb busb;
+	do{
+		cout<<"\n\t\tCREATE BOOTABLE USB";
+		cout<<"\n\t1.Format USB in ntfs format."<<"\n\t2.Copy system files(making usb bootable)."<<"\n\t3.Exit.";
+		cout<<"\nEnter your choice=";
+		cin>>ch;
+		switch(ch)
+		{
+			case 1: busb.formatusb();
+				break;
+			case 2: busb.isocopy();
+				break;
+			case 3:	cout<<"\n!!!Exiting!!!\n";
+				break;
+			default: cout<<"\n!!!!Enter correct choice!!!!";
+
+		}
+	}while(ch!=3);
+	return 0;
+}

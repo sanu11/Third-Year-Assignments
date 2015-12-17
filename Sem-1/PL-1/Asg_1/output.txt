@@ -1,0 +1,154 @@
+1]
+
+MariaDB [te3265db]> select * from Author;
++---------+---------------------+-------------+
+| Auth_no | Auth_name           | Country     |
++---------+---------------------+-------------+
+|       1 | David F Rogers      | USA         |
+|       2 | Behrouz A. Forouzan | USA         |
+|       3 | Saied Tahaghoghi    | Iran        |
+|       4 | Yashwant Kanetkar   | India       |
+|       5 | Andrew Tanenbaum    | Netherlands |
++---------+---------------------+-------------+
+5 rows in set (0.00 sec)
+
+MariaDB [te3265db]> select Auth_name from Author where Auth_name like '%r%' or '%a%';
++---------------------+
+| Auth_name           |
++---------------------+
+| David F Rogers      |
+| Behrouz A. Forouzan |
+| Yashwant Kanetkar   |
+| Andrew Tanenbaum    |
++---------------------+
+4 rows in set, 4 warnings (0.00 sec)
+
+2]
+
+MariaDB [te3265db]> select * from Book;
++------------+-------------------+------------+---------+--------+----------+
+| ISBN       | Title             | Unit_price | Auth_no | Pub_no | Pub_year |
++------------+-------------------+------------+---------+--------+----------+
+| 1234563214 | Computer Graphics |        263 |       1 |    123 |     2004 |
+| 1234567843 | Learning Sql      |        368 |       3 |    310 |     2005 |
+| 1234568765 | Let Us C          |        525 |       4 |    120 |     2000 |
+| 1234576876 | Computer Networks |        473 |       2 |    202 |     2006 |
+| 1234587976 | Operaring Systems |        578 |       5 |    405 |     2003 |
++------------+-------------------+------------+---------+--------+----------+
+5 rows in set (0.00 sec)
+
+MariaDB [te3265db]> select Title from Book where Unit_price between 300 and 400;
++--------------+
+| Title        |
++--------------+
+| Learning Sql |
++--------------+
+1 row in set (0.00 sec)
+
+3]
+
+MariaDB [te3265db]> select Title,Unit_price,Pub_year from Book order by Pub_year desc;
++-------------------+------------+----------+
+| Title             | Unit_price | Pub_year |
++-------------------+------------+----------+
+| Computer Networks |        473 |     2006 |
+| Learning Sql      |        368 |     2005 |
+| Computer Graphics |        263 |     2004 |
+| Operaring Systems |        578 |     2003 |
+| Let Us C          |        525 |     2000 |
++-------------------+------------+----------+
+5 rows in set (0.00 sec)
+
+4]
+
+MariaDB [te3265db]> select Title,Auth_no,Pub_no from Book where Pub_year=2004 or Pub_year=2006 or Pub_year=2000;
++-------------------+---------+--------+
+| Title             | Auth_no | Pub_no |
++-------------------+---------+--------+
+| Computer Graphics |       1 |    123 |
+| Let Us C          |       4 |    120 |
+| Computer Networks |       2 |    202 |
++-------------------+---------+--------+
+3 rows in set (0.00 sec)
+
+5]
+
+MariaDB [te3265db]> delete from Customer where cust_addr like %Pune%;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%Pune%' at line 1
+MariaDB [te3265db]> delete from Customer where cust_addr like '%Pune%';
+Query OK, 2 rows affected (0.02 sec)
+
+MariaDB [te3265db]> select * from Customer;
++---------+---------------+----------------------+------------+
+| cust_no | cust_name     | cust_addr            | cust_phone |
++---------+---------------+----------------------+------------+
+|       2 | Tejal Varma   | Dadar,Mumbai         | 9875213098 |
+|       3 | Swapnil Katke | Budhwar Peth,Solapur | 8007896598 |
+|       4 | Amol Sangole  | Shivaji Chowk,Latur  | 7588613456 |
++---------+---------------+----------------------+------------+
+3 rows in set (0.01 sec)
+
+6]
+
+MariaDB [te3265db]> update Book set Unit_price=Unit_price+(0.05*Unit_price);
+Query OK, 5 rows affected (0.01 sec)
+Rows matched: 5  Changed: 5  Warnings: 0
+
+MariaDB [te3265db]> select * from Book;
++------------+-------------------+------------+---------+--------+----------+
+| ISBN       | Title             | Unit_price | Auth_no | Pub_no | Pub_year |
++------------+-------------------+------------+---------+--------+----------+
+| 1234563214 | Computer Graphics |        276 |       1 |    123 |     2004 |
+| 1234567843 | Learning Sql      |        386 |       3 |    310 |     2005 |
+| 1234568765 | Let Us C          |        551 |       4 |    120 |     2000 |
+| 1234576876 | Computer Networks |        497 |       2 |    202 |     2006 |
+| 1234587976 | Operaring Systems |        607 |       5 |    405 |     2003 |
++------------+-------------------+------------+---------+--------+----------+
+
+
+7]
+
+MariaDB [te3265db]> select * from Customer;
+    -> //
++---------+---------------+----------------------+------------+
+| cust_no | cust_name     | cust_addr            | cust_phone |
++---------+---------------+----------------------+------------+
+|       2 | Tejal Varma   | Dadar,Mumbai         | 9875213098 |
+|       3 | Swapnil Katke | Budhwar Peth,Solapur | 8007896598 |
+|       4 | Amol Sangole  | Shivaji Chowk,Latur  | 7588613456 |
++---------+---------------+----------------------+------------+
+
+
+MariaDB [te3265db]> select * from Orders;
+    -> //
++---------+------------+----------+------------+
+| cust_no | ISBN       | Quantity | Date       |
++---------+------------+----------+------------+
+|       2 | 1234576876 |       20 | 2015-08-12 |
+|       3 | 1234568765 |       15 | 2015-10-11 |
+|       4 | 1234563214 |       10 | 2015-10-12 |
++---------+------------+----------+------------+
+3 rows in set (0.00 sec)
+
+
+MariaDB [te3265db]> create procedure calquan(in cust varchar(30))  
+    -> begin
+    -> select Quantity from Orders where cust_no=(select cust_no from Customer where cust_name=cust );
+    -> end
+    -> ;
+    -> //
+Query OK, 0 rows affected (0.00 sec)
+
+MariaDB [te3265db]> call calquan('Swapnil Katke');
+    -> //
++----------+
+| Quantity |
++----------+
+|       15 |
++----------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+
+
