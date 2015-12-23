@@ -1,0 +1,71 @@
+[cnlab@localhost 3265]$ sbcl --script calmenu.lisp
+Enter Values :
+500
+234
+
+1.Addition
+2.Subtraction
+3.Multiplication
+4.Division
+5.Exit
+
+Enter Choice :
+1
+Addition is :734
+
+Enter Values :
+400
+345
+
+1.Addition
+2.Subtraction
+3.Multiplication
+4.Division
+5.Exit
+
+Enter Choice :
+2
+Subtraction is :55
+
+Enter Values :
+1223
+34
+
+1.Addition
+2.Subtraction
+3.Multiplication
+4.Division
+5.Exit
+
+Enter Choice :
+3
+Multiplication is :41582
+
+Enter Values :
+212
+4
+
+1.Addition
+2.Subtraction
+3.Multiplication
+4.Division
+5.Exit
+
+Enter Choice :
+4
+Division is :53
+
+Enter Values :
+23
+1
+
+1.Addition
+2.Subtraction
+3.Multiplication
+4.Division
+5.Exit
+
+Enter Choice :
+5
+[cnlab@localhost 3265]$ 
+
