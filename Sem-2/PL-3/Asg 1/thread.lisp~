@@ -6,8 +6,8 @@
 (- a b )
 )
 
-(defun mul(a b)
 (defvar i 0)
+(defun mul(a b)
 (defvar ans 0)
 (defvar temp 0)
 (defvar temp2 0)
