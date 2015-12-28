@@ -1,0 +1,164 @@
+Aodv op:
+
+cd ns-3.17/
+[root@localhost ns-3.17]# cd scratch
+[root@localhost scratch]# cd ..
+[root@localhost ns-3.17]# ./waf --run scratch/Aodvwsn
+Waf: Entering directory `/root/ns-allinone-3.17/ns-3.17/build'
+Waf: Leaving directory `/root/ns-allinone-3.17/ns-3.17/build'
+'build' finished successfully (0.637s)
+AnimationInterface WARNING:Node:0 Does not have a mobility model. Use SetConstantPosition if it is stationary
+AnimationInterface WARNING:Node:1 Does not have a mobility model. Use SetConstantPosition if it is stationary
+AnimationInterface WARNING:Node:2 Does not have a mobility model. Use SetConstantPosition if it is stationary
+ Flow 1(192.168.1.1->192.168.1.255)
+ Tx Bytes: 		4800
+ Rx Bytes: 		4800
+ Tx Packets: 		100
+ Rx Packets: 		100
+ Packet Delivery Ratio: 100
+ Throughput: 		1280bits/sec
+ Average Delay: 	+1750311.08669969714643489259
+ Average Jitter: 	+140933.04058283696216101355
+ Dropped Packets: 	0
+ Dropping Ratio: 	0
+ Flow 2(192.168.1.2->192.168.1.255)
+ Tx Bytes: 		4800
+ Rx Bytes: 		4800
+ Tx Packets: 		100
+ Rx Packets: 		100
+ Packet Delivery Ratio: 100
+ Throughput: 		1280bits/sec
+ Average Delay: 	+1458413.1678653710707569197
+ Average Jitter: 	+152569.15864199903390214389
+ Dropped Packets: 	0
+ Dropping Ratio: 	0
+ Flow 3(192.168.1.3->192.168.1.255)
+ Tx Bytes: 		4800
+ Rx Bytes: 		4800
+ Tx Packets: 		100
+ Rx Packets: 		100
+ Packet Delivery Ratio: 100
+ Throughput: 		1280bits/sec
+ Average Delay: 	+1603934.12359318529385399582
+ Average Jitter: 	+250332.18077809192235360583
+ Dropped Packets: 	0
+ Dropping Ratio: 	0
+ Flow 4(192.168.1.1->192.168.1.3)
+ Tx Bytes: 		1977480
+ Rx Bytes: 		1977480
+ Tx Packets: 		3662
+ Rx Packets: 		3662
+ Packet Delivery Ratio: 100
+ Throughput: 		527328bits/sec
+ Average Delay: 	+4805754.10744649128678993336
+ Average Jitter: 	+10296.05299283114566479601
+ Dropped Packets: 	0
+ Dropping Ratio: 	0
+
+Dsdv op:
+ ./waf --run scratch/Dsdvwsn
+Waf: Entering directory `/root/ns-allinone-3.17/ns-3.17/build'
+Waf: Leaving directory `/root/ns-allinone-3.17/ns-3.17/build'
+'build' finished successfully (0.643s)
+AnimationInterface WARNING:Node:0 Does not have a mobility model. Use SetConstantPosition if it is stationary
+AnimationInterface WARNING:Node:1 Does not have a mobility model. Use SetConstantPosition if it is stationary
+AnimationInterface WARNING:Node:2 Does not have a mobility model. Use SetConstantPosition if it is stationary
+ Flow 1(192.168.1.1->192.168.1.255)
+ Tx Bytes: 		1152
+ Rx Bytes: 		1152
+ Tx Packets: 		21
+ Rx Packets: 		21
+ Packet Delivery Ratio: 100
+ Throughput: 		307.2bits/sec
+ Average Delay: 	+2195927.01756832768924719201
+ Average Jitter: 	+1536284.1229782938247303441
+ Dropped Packets: 	0
+ Dropping Ratio: 	0
+ Flow 2(192.168.1.2->192.168.1.255)
+ Tx Bytes: 		1152
+ Rx Bytes: 		1152
+ Tx Packets: 		21
+ Rx Packets: 		21
+ Packet Delivery Ratio: 100
+ Throughput: 		307.2bits/sec
+ Average Delay: 	+1936609.1229782938247303441
+ Average Jitter: 	+1429022.07027331075698876806
+ Dropped Packets: 	0
+ Dropping Ratio: 	0
+ Flow 3(192.168.1.3->192.168.1.255)
+ Tx Bytes: 		1152
+ Rx Bytes: 		1152
+ Tx Packets: 		21
+ Rx Packets: 		21
+ Packet Delivery Ratio: 100
+ Throughput: 		307.2bits/sec
+ Average Delay: 	+2921705.008784163844623596
+ Average Jitter: 	+2466206.02635249153387078802
+ Dropped Packets: 	0
+ Dropping Ratio: 	0
+ Flow 4(192.168.1.1->192.168.1.3)
+ Tx Bytes: 		1977480
+ Rx Bytes: 		1977480
+ Tx Packets: 		3662
+ Rx Packets: 		3662
+ Packet Delivery Ratio: 100
+ Throughput: 		527328bits/sec
+ Average Delay: 	+4803020.09419828350037373435
+ Average Jitter: 	+3515.00302240481819380965
+ Dropped Packets: 	0
+ Dropping Ratio: 	0
+
+Dsrwsn op:
+./waf --run scratch/Dsrwsn
+Waf: Entering directory `/root/ns-allinone-3.17/ns-3.17/build'
+Waf: Leaving directory `/root/ns-allinone-3.17/ns-3.17/build'
+'build' finished successfully (0.636s)
+AnimationInterface WARNING:Node:0 Does not have a mobility model. Use SetConstantPosition if it is stationary
+AnimationInterface WARNING:Node:1 Does not have a mobility model. Use SetConstantPosition if it is stationary
+AnimationInterface WARNING:Node:2 Does not have a mobility model. Use SetConstantPosition if it is stationary
+ Flow 1(192.168.1.1->192.168.1.255)
+ Tx Bytes: 		3184
+ Rx Bytes: 		3184
+ Tx Packets: 		50
+ Rx Packets: 		50
+ Packet Delivery Ratio: 100
+ Throughput: 		849.067bits/sec
+ Average Delay: 	+1499884.01106804644422573096
+ Average Jitter: 	+556772.07378697629483820646
+ Dropped Packets: 	0
+ Dropping Ratio: 	0
+ Flow 2(192.168.1.2->192.168.1.255)
+ Tx Bytes: 		3184
+ Rx Bytes: 		3184
+ Tx Packets: 		50
+ Rx Packets: 		50
+ Packet Delivery Ratio: 100
+ Throughput: 		849.067bits/sec
+ Average Delay: 	+1482625.1438846037749345026
+ Average Jitter: 	+661157.00737869762948382064
+ Dropped Packets: 	0
+ Dropping Ratio: 	0
+ Flow 3(192.168.1.3->192.168.1.255)
+ Tx Bytes: 		3184
+ Rx Bytes: 		3184
+ Tx Packets: 		50
+ Rx Packets: 		50
+ Packet Delivery Ratio: 100
+ Throughput: 		849.067bits/sec
+ Average Delay: 	+1469036.12912720851596686131
+ Average Jitter: 	+538080.08854437155380584775
+ Dropped Packets: 	0
+ Dropping Ratio: 	0
+ Flow 4(192.168.1.1->192.168.1.3)
+ Tx Bytes: 		1977480
+ Rx Bytes: 		1977480
+ Tx Packets: 		3662
+ Rx Packets: 		3662
+ Packet Delivery Ratio: 100
+ Throughput: 		527328bits/sec
+ Average Delay: 	+4802647.08835496751853236901
+ Average Jitter: 	+3967.07173174101846641589
+ Dropped Packets: 	0
+ Dropping Ratio: 	0
+
+

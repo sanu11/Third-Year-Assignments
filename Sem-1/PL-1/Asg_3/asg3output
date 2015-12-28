@@ -1,0 +1,32 @@
+Connecting to database...
+Creating statement...
+Simple View
+
+prof_id 1 Name: abc Desg.: Assistant Salary: 10000
+prof_id 2 Name: def Desg.: Associate Salary: 22000
+prof_id 4 Name: klm Desg.: Assistant Salary: 10000
+prof_id 8 Name: pqr Desg.: Associate Salary: 0
+Complex View
+
+prof_id 1 Name: abc Department: Comp Department id: 1
+prof_id 8 Name: pqr Department: EnTC Department id: 1
+prof_id 1 Name: abc Department: IT Department id: 1
+prof_id 1 Name: abc Department: EnTC Department id: 1
+prof_id 8 Name: pqr Department: Comp Department id: 1
+prof_id 8 Name: pqr Department: IT Department id: 1
+prof_id 4 Name: klm Department: Comp Department id: 2
+prof_id 4 Name: klm Department: IT Department id: 2
+prof_id 4 Name: klm Department: EnTC Department id: 2
+prof_id 2 Name: def Department: Comp Department id: 2
+prof_id 2 Name: def Department: IT Department id: 2
+prof_id 2 Name: def Department: EnTC Department id: 2
+Index on email 
+
+Professors 0 PRIMARY 1 prof_id A
+Professors 1 dept_id 1 dept_id A
+Professors 1 i1 1 email A
+Professors 1 i11 1 email A
+Professors 1 i12 1 email A
+Professors 1 i13 1 email A
+Goodbye!
+

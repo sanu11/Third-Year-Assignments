@@ -1,0 +1,31 @@
+Delivered-To: nrjwgh@gmail.com
+Received: by 10.202.169.2 with SMTP id s2csp685072oie;
+        Sun, 14 Jun 2015 05:31:34 -0700 (PDT)
+X-Received: by 10.70.95.228 with SMTP id dn4mr28672794pdb.89.1434285094159;
+        Sun, 14 Jun 2015 05:31:34 -0700 (PDT)
+Return-Path: <phoenix@ilifestore.in>
+Received: from solutionsindia.biz (mail.ilifestore.in. [202.52.134.193])
+        by mx.google.com with ESMTPS id xg10si13249877pbc.254.2015.06.14.05.31.32
+        for <nrjwgh@gmail.com>
+        (version=TLSv1 cipher=RC4-SHA bits=128/128);
+        Sun, 14 Jun 2015 05:31:33 -0700 (PDT)
+Received-SPF: pass (google.com: domain of phoenix@ilifestore.in designates 202.52.134.193 as permitted sender) client-ip=202.52.134.193;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of phoenix@ilifestore.in designates 202.52.134.193 as permitted sender) smtp.mail=phoenix@ilifestore.in
+X-No-Relay: not in my network
+Received: from LenovoPC (unknown [103.8.195.81])
+	by solutionsindia.biz (Postfix) with ESMTPSA id 0AACD781D37
+	for <nrjwgh@gmail.com>; Sun, 14 Jun 2015 18:00:50 +0530 (IST)
+From: "Phoenix" <phoenix@ilifestore.in>
+To: <nrjwgh@gmail.com>
+References: 
+In-Reply-To: 
+Subject: LENOVO SERVICE CENTRE PUNE ADDRESS ( Smart Phone )
+Date: Sun, 14 Jun 2015 18:01:32 +0530
+Message-ID: <001a01d0a69e$0cd602e0$268208a0$@ilifestore.in>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_001B_01D0A6CC.26956AD0"
+X-Mailer: Microsoft Outlook 14.0
+Thread-Index: AdCLvGiCgD0SZcYfRlW932UY9SH7BwJcgKzQAfwcYbABAm+2IABlULPAAMlncbAALp708A==
+Content-Language: en-in

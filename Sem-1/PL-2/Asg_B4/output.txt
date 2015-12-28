@@ -1,0 +1,194 @@
+demo-dell-pc@demo-dell-pc:~/Documents/$ python log.py
+Enter 0 to see menu=	0
+LOG MENU 
+
+1. BOOT LOG 
+2. AUTH LOG 
+3. KERN LOG 
+4. SYSTEM LOG 
+5. Existing List of LOG Files
+6. EXIT LOG 
+
+Select Log FIle Choice
+Enter the choice=	1
+Scanning for Btrfs filesystems
+Boot LOG data!  * Stopping Read required files in advance                                                                                       [ OK ]
+Boot LOG data!  * Starting Mount filesystems on boot                                                                                            [ OK ]
+Boot LOG data!  * Stopping Track if upstart is running in a container                                                                           [ OK ]
+Boot LOG data!  * Starting Initialize or finalize resolvconf                                                                                    [ OK ]
+Boot LOG data!  * Starting Signal sysvinit that virtual filesystems are mounted                                                                 [ OK ]
+Boot LOG data!  * Starting Signal sysvinit that virtual filesystems are mounted                                                                 [ OK ]
+Boot LOG data!  * Starting Bridge udev events into upstart                                                                                      [ OK ]
+Boot LOG data!  * Starting Signal sysvinit that remote filesystems are mounted                                                                  [ OK ]
+Boot LOG data!  * Starting device node and kernel event manager                                                                                 [ OK ]
+Boot LOG data! LOG MENU 
+
+
+Select Log FIle Choice
+Enter the choice=	2
+Sep 28 20:17:01 yash-dell-pc CRON[14709]: pam_unix(cron:session): session opened for user root by (uid=0)
+Authentication LOG data! Sep 28 20:17:01 yash-dell-pc CRON[14709]: pam_unix(cron:session): session closed for user root
+Authentication LOG data! Sep 28 20:42:31 yash-dell-pc sudo: yash-dell-pc : TTY=pts/1 ; PWD=/home/yash-dell-pc ; USER=root ; COMMAND=/usr/bin/apt-get install android-tools-adb
+Authentication LOG data! Sep 28 20:42:31 yash-dell-pc sudo: pam_unix(sudo:session): session opened for user root by yash-dell-pc(uid=0)
+Authentication LOG data! Sep 28 20:42:50 yash-dell-pc sudo: pam_unix(sudo:session): session closed for user root
+Authentication LOG data! Sep 28 20:45:39 yash-dell-pc pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1001)
+Authentication LOG data! Sep 28 20:45:39 yash-dell-pc pkexec: pam_ck_connector(polkit-1:session): cannot determine display-device
+Authentication LOG data! Sep 28 20:45:39 yash-dell-pc pkexec[17812]: yash-dell-pc: Executing command [USER=root] [TTY=unknown] [CWD=/home/yash-dell-pc] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+Authentication LOG data! Sep 28 21:17:01 yash-dell-pc CRON[19121]: pam_unix(cron:session): session opened for user root by (uid=0)
+Authentication LOG data! Sep 28 21:17:01 yash-dell-pc CRON[19121]: pam_unix(cron:session): session closed for user root
+Authentication LOG data! LOG MENU 
+
+Select Log FIle Choice
+Enter the choice=	3
+Sep 28 20:41:41 yash-dell-pc kernel: [ 7474.000650] usb 2-1: new high-speed USB device number 3 using xhci_hcd
+Kernel LOG data! Sep 28 20:41:41 yash-dell-pc kernel: [ 7474.017875] usb 2-1: New USB device found, idVendor=04e8, idProduct=6860
+Kernel LOG data! Sep 28 20:41:41 yash-dell-pc kernel: [ 7474.017884] usb 2-1: New USB device strings: Mfr=2, Product=3, SerialNumber=4
+Kernel LOG data! Sep 28 20:41:41 yash-dell-pc kernel: [ 7474.017890] usb 2-1: Product: SAMSUNG_Android
+Kernel LOG data! Sep 28 20:41:41 yash-dell-pc kernel: [ 7474.017893] usb 2-1: Manufacturer: SAMSUNG
+Kernel LOG data! Sep 28 20:41:41 yash-dell-pc kernel: [ 7474.017897] usb 2-1: SerialNumber: 4d00ac06520330a5
+Kernel LOG data! Sep 28 20:41:41 yash-dell-pc kernel: [ 7474.091033] cdc_acm 2-1:1.1: This device cannot do calls on its own. It is not a modem.
+Kernel LOG data! Sep 28 20:41:41 yash-dell-pc kernel: [ 7474.091073] cdc_acm 2-1:1.1: ttyACM0: USB ACM device
+Kernel LOG data! Sep 28 20:41:41 yash-dell-pc kernel: [ 7474.091323] usbcore: registered new interface driver cdc_acm
+Kernel LOG data! Sep 28 20:41:41 yash-dell-pc kernel: [ 7474.091325] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+Kernel LOG data! LOG MENU 
+
+Select Log FIle Choice
+Enter the choice=	4
+Sep 28 19:17:57 yash-dell-pc rsyslogd: [origin software="rsyslogd" swVersion="7.4.4" x-pid="937" x-info="http://www.rsyslog.com"] rsyslogd was HUPed
+System LOG data! Sep 28 19:19:15 yash-dell-pc anacron[9022]: Job `cron.daily' terminated
+System LOG data! Sep 28 19:27:45 yash-dell-pc anacron[9022]: Job `cron.monthly' started
+System LOG data! Sep 28 19:27:45 yash-dell-pc anacron[9022]: Job `cron.monthly' terminated
+System LOG data! Sep 28 19:27:45 yash-dell-pc anacron[9022]: Normal exit (2 jobs run)
+System LOG data! Sep 28 19:27:45 yash-dell-pc anacron[10449]: Updated timestamp for job `cron.monthly' to 2015-09-28
+System LOG data! Sep 28 19:31:52 yash-dell-pc dbus[1014]: [system] Activating service name='org.freedesktop.hostname1' (using servicehelper)
+System LOG data! Sep 28 19:31:52 yash-dell-pc dbus[1014]: [system] Successfully activated service 'org.freedesktop.hostname1'
+System LOG data! Sep 28 19:31:52 yash-dell-pc kernel: [ 3282.762887] systemd-hostnamed[10699]: Warning: nss-myhostname is not installed. Changing the local hostname might make it unresolveable. Please install nss-myhostname!
+System LOG data! Sep 28 19:49:02 yash-dell-pc dbus[1014]: [system] Activating service name='org.freedesktop.hostname1' (using servicehelper)
+System LOG data! LOG MENU 
+
+
+Select Log FIle Choice
+Enter the choice=	5
+bootstrap.log
+ConsoleKit
+syslog.7.gz
+dmesg.4.gz
+apport.log.6.gz
+dpkg.log.5.gz
+pm-powersave.log
+alternatives.log.6.gz
+dpkg.log.6.gz
+cups
+dpkg.log.2.gz
+alternatives.log.5.gz
+pm-suspend.log.1
+pm-suspend.log
+syslog.3.gz
+mysql.log.2.gz
+dpkg.log.12.gz
+mysql.log.1.gz
+alternatives.log.12.gz
+syslog.2.gz
+wtmp
+faillog
+pm-suspend.log.2.gz
+unattended-upgrades
+mysql.log.7.gz
+wifi-radar.log
+apport.log.7.gz
+btmp.1
+pm-suspend.log.4.gz
+mail.log
+ufw.log
+btmp
+syslog.5.gz
+hp
+apt
+alternatives.log.3.gz
+wtmp.1
+dpkg.log.11.gz
+apport.log.4.gz
+auth.log.3.gz
+syslog.6.gz
+alternatives.log.2.gz
+dpkg.log.4.gz
+gpu-manager.log
+Xorg.1.log.old
+apport.log.1
+speech-dispatcher
+pm-powersave.log.4.gz
+kern.log.2.gz
+mysql.err
+pm-powersave.log.2.gz
+syslog
+kern.log.3.gz
+alternatives.log.7.gz
+fontconfig.log
+pm-powersave.log.3.gz
+dmesg.0
+dmesg.2.gz
+dmesg
+pm-suspend.log.3.gz
+Xorg.2.log
+apport.log.2.gz
+syslog.1
+fsck
+alternatives.log.4.gz
+auth.log.2.gz
+mysql.log.3.gz
+news
+mysql.log.5.gz
+alternatives.log
+dist-upgrade
+Xorg.3.log
+vbox-install.log
+lastlog
+apport.log.3.gz
+syslog.4.gz
+alternatives.log.9.gz
+upstart
+mysql.log.4.gz
+boot.log
+dmesg.3.gz
+kern.log.4.gz
+jockey.log.1
+jockey.log
+udev
+apport.log.5.gz
+pm-powersave.log.1
+Xorg.1.log
+mongodb
+oem-config.log
+auth.log
+dpkg.log.1
+Xorg.failsafe.log
+alternatives.log.10.gz
+alternatives.log.11.gz
+mysql
+alternatives.log.8.gz
+dpkg.log
+lightdm
+dpkg.log.7.gz
+Xorg.0.log.old
+dpkg.log.10.gz
+kern.log.1
+Xorg.0.log
+wvdialconf.log
+installer
+auth.log.4.gz
+dpkg.log.3.gz
+mail.err
+Xorg.failsafe.log.old
+samba
+mysql.log.6.gz
+dpkg.log.8.gz
+apport.log
+auth.log.1
+mysql.log
+dpkg.log.9.gz
+dmesg.1.gz
+Xorg.2.log.old
+kern.log
+alternatives.log.1
+Xorg.3.log.old
+boot

@@ -1,0 +1,73 @@
+
+OUTPUT:
+
+[root@localhost folder]# c++ assingb12.cpp -o assingb12
+[root@localhost folder]# ./assingb12
+
+		CREATE BOOTABLE USB
+	1.Format USB in ntfs format.
+	2.Copy system files(making usb bootable).
+	3.Exit.
+Enter your choice=1
+
+!!!!!!Please take backup of files of your USB as formating process will erase everything!!!!!!
+
+Do you want still to continue(y/Y/n/N)=y
+
+/dev/sda1: UUID="5C7CAFF57CAFC85A" TYPE="ntfs"
+/dev/sda5: LABEL="Documents" UUID="01CE2BC7233CDA80" TYPE="ntfs"
+/dev/sda6: LABEL="Nishant" UUID="D4482AAD482A8E74" TYPE="ntfs"
+/dev/sda7: LABEL="Manisha" UUID="107ABCA47ABC87CC" TYPE="ntfs"
+/dev/sda8: LABEL="Entertainment" UUID="F0EE15C6EE1585CE" TYPE="ntfs"
+/dev/sda9: UUID="2894352b-01af-4b15-9b03-41cbd1f347bc" TYPE="ext4"
+/dev/sda10: UUID="DHdgaL-C6pO-rF42-gzIA-TW7B-qB02-91V9yq" TYPE="LVM2_member"
+/dev/mapper/fedora-swap: UUID="5caf22d5-e168-4b0b-b0d5-af4458630eff" TYPE="swap"
+/dev/mapper/fedora-root: UUID="f9e6aad2-f6f8-4c18-886e-7a5dfaabc370" TYPE="ext4"
+/dev/sdb1: UUID="2013-06-27-17-22-08-00" LABEL="Fedora-Live-Desktop-x86_64-19-1" TYPE="iso9660" PTTYPE="dos"
+/dev/sdb2: SEC_TYPE="msdos" LABEL="EFI" UUID="3D53-18A8" TYPE="vfat"
+/dev/sdb3: UUID="753e960e-cae9-3081-bc59-2891027e76f8" LABEL="Fedora Live" TYPE="hfsplus"
+
+Enter path of USB=/dev/sdb1
+­
+Cluster size has been automatically set to 4096 bytes.
+Initializing device with zeroes: 100% - Done.
+Creating NTFS volume structures.
+mkntfs completed successfully. Have a nice day.
+
+		CREATE BOOTABLE USB
+	1.Format USB in ntfs format.
+	2.Copy system files(making usb bootable).
+	3.Exit.
+Enter your choice=2
+
+!!!!!!Please take backup of files of your USB as this USB bootable process will erase everything!!!!!!
+
+Do you still want to continue(y/Y/n/N)=y
+
+/dev/sda1: UUID="5C7CAFF57CAFC85A" TYPE="ntfs"
+/dev/sda5: LABEL="Documents" UUID="01CE2BC7233CDA80" TYPE="ntfs"
+/dev/sda6: LABEL="Nishant" UUID="D4482AAD482A8E74" TYPE="ntfs"
+/dev/sda7: LABEL="Manisha" UUID="107ABCA47ABC87CC" TYPE="ntfs"
+/dev/sda8: LABEL="Entertainment" UUID="F0EE15C6EE1585CE" TYPE="ntfs"
+/dev/sda9: UUID="2894352b-01af-4b15-9b03-41cbd1f347bc" TYPE="ext4"
+/dev/sda10: UUID="DHdgaL-C6pO-rF42-gzIA-TW7B-qB02-91V9yq" TYPE="LVM2_member"  
+/dev/mapper/fedora-swap: UUID="5caf22d5-e168-4b0b-b0d5-af4458630eff" TYPE="swap"
+/dev/mapper/fedora-root: UUID="f9e6aad2-f6f8-4c18-886e-7a5dfaabc370" TYPE="ext4"
+/dev/sdb1: UUID="1B0617EC235EE31A" TYPE="ntfs"
+
+Enter path of USB=/dev/sdb1
+
+1947648+0 records in
+1947648+0 records out
+997195776 bytes (997 MB) copied, 380.145 s, 2.6 MB/s
+
+!!!!!!Your USB is now bootable and can remove it from port!!!!!!
+
+		CREATE BOOTABLE USB
+	1.Format USB in ntfs format.
+	2.Copy system files(making usb bootable).
+	3.Exit.
+Enter your choice=3
+
+!!!Exiting!!!
+[root@localhost folder]#

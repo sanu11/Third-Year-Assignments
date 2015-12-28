@@ -1,0 +1,33 @@
+
+
+[root@localhost tecomp]# cd /usr/local/share/
+[root@localhost share]# ls
+applications  info  man
+[root@localhost share]# mkdir honeyd
+[root@localhost share]# cd  honeyd/
+[root@localhost honeyd]# gedit honeyd.conf
+
+directory
+OUTPUT:::::::::::::::::::::::::::::::::::
+[root@localhost honeyd]# honeyd  -d  -f  honeyd.conf
+[root@localhost honeyd]# honeyd  -i p1p1 -d  -f  honeyd.conf
+Honeyd V1.5c Copyright (c) 2002-2007 Niels Provos
+honeyd[2589]: started with -i p1p1 -d -f honeyd.conf
+Warning: Impossible SI range in Class fingerprint "IBM OS/400 V4R2M0"
+Warning: Impossible SI range in Class fingerprint "Microsoft Windows NT 4.0 SP3"
+honeyd[2589]: listening promiscuously on p1p1: (arp or ip proto 47 or (udp and src port 67 and dst port 68) or (ip )) and not ether src c8:1f:66:05:e2:23
+honeyd[2589]: [p1p1] trying DHCP
+honeyd[2589]: Demoting process privileges to uid 99, gid 99
+honeyd[2589]: update_check: failed to resolve host.
+honeyd[2589]: [p1p1] got DHCP offer: 192.168.5.108
+honeyd[2589]: Updating ARP binding: 00:00:24:71:57:e7 -> 192.168.5.108
+honeyd[2589]: arp reply 192.168.5.108 is-at 00:00:24:71:57:e7
+honeyd[2589]: Sending ICMP Echo Reply: 192.168.5.108 -> 192.168.5.28
+honeyd[2589]: arp_send: who-has 192.168.5.28 tell 192.168.5.108
+honeyd[2589]: arp_recv_cb: 192.168.5.28 at c8:1f:66:05:e0:2a
+honeyd[2589]: Sending ICMP Echo Reply: 192.168.5.108 -> 192.168.5.28
+honeyd[2589]: Sending ICMP Echo Reply: 192.168.5.108 -> 192.168.5.28
+honeyd[2589]: Sending ICMP Echo Reply: 192.168.5.108 -> 192.168.5.28
+honeyd[2589]: Sending ICMP Echo Reply: 192.168.5.108 -> 192.168.5.28
+honeyd[2589]: Sending ICMP Echo Reply: 192.168.5.108 -> 192.168.5.28
+^Choneyd[2589]: exiting on signal 2

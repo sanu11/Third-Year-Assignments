@@ -1,0 +1,90 @@
+\documentclass{article}
+\usepackage{graphicx}
+
+\title{Assignment No : A6}
+\begin{document}
+\maketitle
+
+\noindent \textbf{\large Title :File Transfer using Socket Programming} \\[.75cm]
+\textbf{\large Learning Objective : }\\	
+\hspace*{5mm} 1. To understand about sockets	\newline
+\hspace*{5mm} 2. To learn socket programming in python.	 \newline
+\textbf{\large Problem Definition : }\\
+\textbf{\large Related Mathematics :}\\
+Let $S$ be the system such that\\
+$$S=\lbrace s,e,X,Y,F_{me},F_{friend},DD,NDD |\phi_{s} \rbrace$$\\
+where,\\
+s = start state $S$\\
+e = end state = file transferred\\
+X = set of Inputs\\
+Y = set of Outputs\\ 
+\textbf{Input Analysis: }\\
+$$X=\lbrace X1,X2 \rbrace$$\\
+X1=input for server
+X2=input for client
+$$Y=\lbrace file \rbrace$$
+where,\\
+$$file=\lbrace A \cup N \cup S \rbrace$$
+A=set of Alphabets \\
+N=set of Numbers\\
+S=set of symbols\\
+$F_{me}$ is the main function where the execution of program begins i.e. the entry point of program.\\
+$$F_{friend}=\lbrace f_1,f_2,f_3,f_4 \rbrace$$\\
+where,\\
+f_1 : be a function that creates server.\\
+f_2 : client connects to server.\\
+f_3 : that sends file\\
+f_4 : receives file.
+$x,y \in I^+ $\newpage
+\textbf{\large Related Theory: }\\[.5cm]
+
+\textbf{\large13.1.3 Sockets and Socket-based Communication :}
+Sockets provide an interface for programming networks at the transport layer. Network communication
+using Sockets is very much similar to performing fi le I/O. In fact, socket handle is treated like fi le handle.
+The streams used in fi le I/O operation are also applicable to socket-based I/O. Socket-based
+communication is independent of a programming language used for implementing it. That means, a socket
+program written in Java language can communicate to a program written in non-Java (say C or C++) socket
+program.
+A server (program) runs on a specifi c computer and has a socket that is bound to a specifi c port. The
+server listens to the socket for a client to make a connection request (see Fig. 13.4a). If everything goes
+well, the server accepts the connection (see Fig. 13.4b). Upon acceptance, the server gets a new socket
+bound to a different port. It needs a new socket (consequently a different port number) so that it can
+continue to listen to the original socket for connection requests while serving the connected client.
+ Socket\\[.5cm] 
+\textbf{\large Socket Programming in Python. }\\[.5cm]
+Python provides two levels of access to network services. At a low level, you can access the basic socket support in the underlying operating system, which allows you to implement clients and servers for both connection-oriented and connectionless protocols.
+
+Python also has libraries that provide higher-level access to specific application-level network protocols, such as FTP, HTTP, and so on.
+Server Socket Methods
+Method	Description
+s.bind()	This method binds address (hostname, port number pair) to socket.
+s.listen()	This method sets up and start TCP listener.
+s.accept()	This passively accept TCP client connection, waiting until connection arrives (blocking).
+
+Client Socket Methods
+Method	Description
+s.connect()	This method actively initiates TCP server connection.
+
+General Socket Methods
+Method	Description
+s.recv()	This method receives TCP message
+s.send()	This method transmits TCP message
+s.recvfrom()	This method receives UDP message
+s.sendto()	This method transmits UDP message
+s.close()	This method closes socket
+socket.gethostname()	Returns the hostname.
+
+\textbf{\large State Diagram: }\\
+\begin{center}\includegraphics[scale=0.7]{state.jpeg}   \end{center}
+where , \\
+$q_0$=start state \\
+$q_1$=run server \\
+$q_2$=client establishes connecton with server \\
+$q_3$=server sends file.\\
+$q_4$=clients receives file.\\
+$q_r$=connection not established.\\
+$q_n$=end state\\[.75cm]
+\textbf{\large Conclusion:}\\[.25cm]
+In this assignment we have successfully implemented socket programming in python.we learnt basics\\
+of socket programming.\\
+\end{document}

@@ -1,0 +1,305 @@
+﻿> db.Manager.insert({mid:101,mname:{firstname:"Raj",lastname:"Patel"},sal:300000,type:"general manager",status:"A"})
+> db.Manager.find().pretty();
+{
+	"_id" : ObjectId("5606d864b3a05e42e01ae9fe"),
+	"mid" : 101,
+	"mname" : {
+		"firstname" : "Raj",
+		"lastname" : "Patel"
+	},
+	"sal" : 300000,
+	"type" : "general manager",
+	"status" : "A"
+}
+> db.Manager.insert({mid:102,mname:{firstname:"Dipak",lastname:"Dargad"},sal:350000,type:"revenue manager",status:"A"})
+> db.Manager.insert({mid:103,mname:{firstname:"Chetan",lastname:"Rajput"},sal:250000,type:"convention_service manager",status:"A"})
+> db.Manager.insert({mid:104,mname:{firstname:"Kiran",lastname:"Jaju"},sal:450000,type:"front_office manager",status:"NA"})
+> db.Manager.find().pretty();
+{
+	"_id" : ObjectId("5606d864b3a05e42e01ae9fe"),
+	"mid" : 101,
+	"mname" : {
+		"firstname" : "Raj",
+		"lastname" : "Patel"
+	},
+	"sal" : 300000,
+	"type" : "general manager",
+	"status" : "A"
+}
+{
+	"_id" : ObjectId("5606d8a7b3a05e42e01ae9ff"),
+	"mid" : 102,
+	"mname" : {
+		"firstname" : "Dipak",
+		"lastname" : "Dargad"
+	},
+	"sal" : 350000,
+	"type" : "revenue manager",
+	"status" : "A"
+}
+{
+	"_id" : ObjectId("5606d8f9b3a05e42e01aea00"),
+	"mid" : 103,
+	"mname" : {
+		"firstname" : "Chetan",
+		"lastname" : "Rajput"
+	},
+	"sal" : 250000,
+	"type" : "convention_service manager",
+	"status" : "A"
+}
+{
+	"_id" : ObjectId("5606d951b3a05e42e01aea01"),
+	"mid" : 104,
+	"mname" : {
+		"firstname" : "Kiran",
+		"lastname" : "Jaju"
+	},
+	"sal" : 450000,
+	"type" : "front_office manager",
+	"status" : "NA"
+}
+**************querying**********
+> db.Manager.find({status:{$ne:"A"}}).pretty()
+{
+	"_id" : ObjectId("5606d951b3a05e42e01aea01"),
+	"mid" : 104,
+	"mname" : {
+		"firstname" : "Kiran",
+		"lastname" : "Jaju"
+	},
+	"sal" : 450000,
+	"type" : "front_office manager",
+	"status" : "NA"
+}
+> db.Manager.find({mid:{$lte:102}}).pretty()
+{
+	"_id" : ObjectId("5606d864b3a05e42e01ae9fe"),
+	"mid" : 101,
+	"mname" : {
+		"firstname" : "Raj",
+		"lastname" : "Patel"
+	},
+	"sal" : 300000,
+	"type" : "general manager",
+	"status" : "A"
+}
+{
+	"_id" : ObjectId("5606d8a7b3a05e42e01ae9ff"),
+	"mid" : 102,
+	"mname" : {
+		"firstname" : "Dipak",
+		"lastname" : "Dargad"
+	},
+	"sal" : 350000,
+	"type" : "revenue manager",
+	"status" : "A"
+}
+************AND************
+> db.Manager.find({"type":"front_office manager","sal":450000}).pretty()
+{
+	"_id" : ObjectId("5606d951b3a05e42e01aea01"),
+	"mid" : 104,
+	"mname" : {
+		"firstname" : "Kiran",
+		"lastname" : "Jaju"
+	},
+	"sal" : 450000,
+	"type" : "front_office manager",
+	"status" : "NA"
+}
+> db.Manager.find({"mname":{"firstname":"Raj","lastname":"Patel"},"status":"A"}).pretty()
+{
+	"_id" : ObjectId("5606d864b3a05e42e01ae9fe"),
+	"mid" : 101,
+	"mname" : {
+		"firstname" : "Raj",
+		"lastname" : "Patel"
+	},
+	"sal" : 300000,
+	"type" : "general manager",
+	"status" : "A"
+}
+> db.Manager.find({"mid":104,"status":"NA"}).pretty()
+{
+	"_id" : ObjectId("5606d951b3a05e42e01aea01"),
+	"mid" : 104,
+	"mname" : {
+		"firstname" : "Kiran",
+		"lastname" : "Jaju"
+	},
+	"sal" : 450000,
+	"type" : "front_office manager",
+	"status" : "NA"
+}
+*********************OR***********************
+> db.Manager.find({$or:[{"sal":{$lte:350000}},{"status":"A"}]}).pretty()
+{
+	"_id" : ObjectId("5606d864b3a05e42e01ae9fe"),
+	"mid" : 101,
+	"mname" : {
+		"firstname" : "Raj",
+		"lastname" : "Patel"
+	},
+	"sal" : 300000,
+	"type" : "general manager",
+	"status" : "A"
+}
+{
+	"_id" : ObjectId("5606d8a7b3a05e42e01ae9ff"),
+	"mid" : 102,
+	"mname" : {
+		"firstname" : "Dipak",
+		"lastname" : "Dargad"
+	},
+	"sal" : 350000,
+	"type" : "revenue manager",
+	"status" : "A"
+}
+{
+	"_id" : ObjectId("5606d8f9b3a05e42e01aea00"),
+	"mid" : 103,
+	"mname" : {
+		"firstname" : "Chetan",
+		"lastname" : "Rajput"
+	},
+	"sal" : 250000,
+	"type" : "convention_service manager",
+	"status" : "A"
+}
+> db.Manager.find({$or:[{"type":"general manager"},{"sal":{$gt:350000}}]}).pretty()
+{
+	"_id" : ObjectId("5606d864b3a05e42e01ae9fe"),
+	"mid" : 101,
+	"mname" : {
+		"firstname" : "Raj",
+		"lastname" : "Patel"
+	},
+	"sal" : 300000,
+	"type" : "general manager",
+	"status" : "A"
+}
+{
+	"_id" : ObjectId("5606d951b3a05e42e01aea01"),
+	"mid" : 104,
+	"mname" : {
+		"firstname" : "Kiran",
+		"lastname" : "Jaju"
+	},
+	"sal" : 450000,
+	"type" : "front_office manager",
+	"status" : "NA"
+}
+**********************AGGREGATION***************
+> db.Manager.aggregate([{$group : {_id : "$status", number_manager : {$sum : 1}}}])
+{
+	"result" : [
+		{
+			"_id" : "NA",
+			"number_manager" : 1
+		},
+		{
+			"_id" : "A",
+			"number_manager" : 3
+		}
+	],
+	"ok" : 1
+}
+> db.Manager.aggregate([{$group : {_id : "$type", number_manager : {$sum : 1}}}])
+{
+	"result" : [
+		{
+			"_id" : "front_office manager",
+			"number_manager" : 1
+		},
+		{
+			"_id" : "convention_service manager",
+			"number_manager" : 2
+		},
+		{
+			"_id" : "revenue manager",
+			"number_manager" : 1
+		},
+		{
+			"_id" : "general manager",
+			"number_manager" : 1
+		}
+	],
+	"ok" : 1
+}
+> db.Manager.aggregate([{$group : {_id : "$sal", number_manager : {$sum : 1}}}])
+{
+	"result" : [
+		{
+			"_id" : 400000,
+			"number_manager" : 1
+		},
+		{
+			"_id" : 450000,
+			"number_manager" : 1
+		},
+		{
+			"_id" : 250000,
+			"number_manager" : 1
+		},
+		{
+			"_id" : 350000,
+			"number_manager" : 1
+		},
+		{
+			"_id" : 300000,
+			"number_manager" : 1
+		}
+	],
+	"ok" : 1
+}
+> db.Manager.aggregate([{$group : {_id : "$type", avg_salary : {$avg : "$sal"}}}])
+{
+	"result" : [
+		{
+			"_id" : "front_office manager",
+			"avg_salary" : 450000
+		},
+		{
+			"_id" : "convention_service manager",
+			"avg_salary" : 325000
+		},
+		{
+			"_id" : "revenue manager",
+			"avg_salary" : 350000
+		},
+		{
+			"_id" : "general manager",
+			"avg_salary" : 300000
+		}
+	],
+	"ok" : 1
+}
+> db.Manager.aggregate([{$group : {_id : "$status", minimum_salary : {$min : "$sal"}}}])
+{
+	"result" : [
+		{
+			"_id" : "NA",
+			"minimum_salary" : 400000
+		},
+		{
+			"_id" : "A",
+			"minimum_salary" : 250000
+		}
+	],
+	"ok" : 1
+}
+> db.Manager.aggregate([{$group : {_id : "$status", minimum_salary : {$max : "$sal"}}}])
+{
+	"result" : [
+		{
+			"_id" : "NA",
+			"minimum_salary" : 450000
+		},
+		{
+			"_id" : "A",
+			"minimum_salary" : 350000
+		}
+	],
+	"ok" : 1
+}
