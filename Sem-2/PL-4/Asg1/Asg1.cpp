@@ -2,7 +2,7 @@
 #include<crafter.h>
 using namespace std;
 using namespace Crafter;
-
+ 
 /*declaring variables to store the count*/
 
 int rescnt=0,reqcnt=0,cnt=0,pktcnt=0;
