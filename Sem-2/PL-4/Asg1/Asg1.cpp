@@ -48,6 +48,10 @@ std::string token = payload.substr(a,b-a);
 //cout<<token<<endl;	 
 std ::size_t c=token.find(":");
 std::string host = token.substr(c+1,token.length()); 
+<<<<<<< HEAD
+=======
+//cout<<host;
+>>>>>>> 79b1123811df241fea21952fa094ca7f22140d40
 map<string,int>::iterator p;
 p=mp.find(host);
 if(p==mp.end())
@@ -66,17 +70,28 @@ int main()
 	/*creating a sniffer*/
 	Sniffer sniff("tcp and port 3128",iface,PacketHandler);
 
+<<<<<<< HEAD
 	sniff.Capture(1000);
+=======
+	sniff.Capture(100);
+>>>>>>> 79b1123811df241fea21952fa094ca7f22140d40
 
 	cout<<"total packets sniffed:"<<pktcnt<<endl;
 	cout<<"total request packets:"<<reqcnt<<endl;
 	cout<<"total response packets:"<<rescnt<<endl;
 map<string,int>::iterator p=mp.begin();
+<<<<<<< HEAD
 cout<<"Number of requests for every url : \n"; 
 while(p!=mp.end())
 {
 cout<<p->first<<" "<<p->second<<endl;
 p++;
+=======
+while(p!=mp.end())
+{
+cout<<p->first<<" "<<p->second<<endl;
+ p++;
+>>>>>>> 79b1123811df241fea21952fa094ca7f22140d40
 } 
 	return 0;
 }
