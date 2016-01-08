@@ -80,5 +80,5 @@ os.system("ifconfig p4p1 " + temp + " netmask " + subnet)
 ip2= raw_input("Enter ip of another machine in subnet %d " %sub )
 os.system("ping " + ip2)
 	
-
+ 
 
