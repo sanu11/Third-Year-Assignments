@@ -1,11 +1,11 @@
 import os
-
+from random import randint
 get_bin = lambda x, n: format(x, 'b').zfill(n)
 
 print "CIDR notation\n"
 ip=raw_input("Enter ip\n")
 bits=input("Enter bits to be set\n")
-r=bits%8
+r=bits%8	
 q=bits/8
 subnet=""
 c=0
@@ -61,14 +61,24 @@ for i in range(0,len(arr)):
 	print " " ,arr[i]
 
 sub=input( "Enter subnet for which ip is to be set\n")	
-first=arr[sub-1].split('.')[q]
-last=arr[sub].split('.')[q]
-print first,last
+first=int(arr[sub-1].split('.')[q])
+if(sub!=4):
+	last=int(arr[sub].split('.')[q])-1
+else:
+	last=255
+y=randint(first,last)
+print y
+temp=temp+str(y)
+for i in range(q+1,4):
+	temp=temp+"."	
+	y=randint(0,255)
+	temp=temp+str(y)
+print "New ip is :" + temp 
+print "New subnet is : " + subnet
 
-
-
-
-
+os.system("ifconfig p4p1 " + temp + " netmask " + subnet)
+ip2= raw_input("Enter ip of another machine in subnet %d " %sub )
+os.system("ping " + ip2)
 	
 
 
