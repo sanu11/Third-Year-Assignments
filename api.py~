@@ -1,0 +1,4 @@
+import urllib2
+content = urllib2.urlopen("http://quotes.rest/quote.json").read()
+print content
+ 
