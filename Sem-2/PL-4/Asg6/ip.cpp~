@@ -14,8 +14,6 @@ int main( int argc, const char** argv )
           //system("pause"); //wait for a key press
           return -1;
      }
-
-
 	
 	  cvtColor( img,img, CV_BGR2GRAY );
 	imshow("original image",img);
@@ -38,8 +36,7 @@ int main( int argc, const char** argv )
 
 
 		}
-	}*/
-		
+	}*/	
 	//blurring 
 	int arr[3][3]={1};
 	int ta=0;
@@ -64,17 +61,6 @@ int main( int argc, const char** argv )
 
 		}
 	}
-
-
-
-	
-
-
-
-
-
-
-
 
 
 
