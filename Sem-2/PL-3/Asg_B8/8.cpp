@@ -1,4 +1,4 @@
-//#include<omp>
+#include<omp>
 #include<iostream>
 using namespace std;
 
@@ -39,7 +39,7 @@ int main()
 	nodestatus[start]=1;
 
 	int vertex1, vertex2, count=0, currentmin, minweight=0;
-	cout<<"0 -> ";
+
 	while(count<v-1)
 	{
 		currentmin=999;
