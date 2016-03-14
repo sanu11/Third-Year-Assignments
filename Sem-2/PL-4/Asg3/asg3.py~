@@ -2,19 +2,26 @@ from scapy.all import *
 from multiprocessing import Process
 
 def pkt_callback(pkt):
+	print "\n\nCore1\n\n"
 	pkt.show()
+	
+def pkt_callback2(pkt):
+	print "\n\nCore2\n\n"
+	pkt.show()
+
+def pkt_callback3(pkt):
+	print "\n\nCore3\n\n"
+	pkt.show()
+
  
 def tcp():
-    print "Core 1"
     sniff(count=3,iface="p4p1", prn=pkt_callback, filter="tcp", store=0)
 
 def udp():
-    print "Core 2"
-    sniff(count=3,iface="p4p1", prn=pkt_callback, filter="udp", store=0)
+    sniff(count=3,iface="p4p1", prn=pkt_callback2, filter="udp", store=0)
    
 def ip():
-    print "Core 3"
-    sniff(count=3,iface="p4p1", prn=pkt_callback, filter="ip", store=0)
+    sniff(count=3,iface="p4p1", prn=pkt_callback3, filter="ip", store=0)
    
 def main():
    
