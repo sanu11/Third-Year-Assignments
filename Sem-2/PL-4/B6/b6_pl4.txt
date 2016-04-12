@@ -1,0 +1,57 @@
+Name: Neelam Santosh Thube
+Class: TE-2 
+Roll No:3273
+B6: Write TFTP program using socket programming for UDP using C++
+----------------------------TFTPServer.java--------------------------------------------------
+import java.io.*;
+import java.net.*;
+class TFTPServer
+{
+  public static void main(String args[]) throws Exception
+ {
+     DatagramSocket serverSocket = new DatagramSocket(5000);
+     File toSend = new File("toSend.txt");
+     byte[] sendData = new byte[1024];
+     byte[] receiveData = new byte[1024];
+     FileInputStream fis = new FileInputStream(toSend);
+     BufferedInputStream bis = new BufferedInputStream(fis);
+     bis.read(sendData,0,(int)toSend.length());
+            while(true)
+               {
+                  DatagramPacket receivePacket =new DatagramPacket(receiveData, receiveData.length);
+		  serverSocket.receive(receivePacket);
+                  InetAddress IPAddress =receivePacket.getAddress();
+                  int port =receivePacket.getPort();
+                  DatagramPacket sendPacket =new DatagramPacket(sendData, sendData.length, IPAddress, port);
+                  serverSocket.send(sendPacket);
+               }
+      }
+}
+
+------------------------TFTPClient.java--------------------------------------------------------
+import java.io.*;
+
+import java.net.*;
+
+class TFTPClient
+{ 
+public static void main(String args[]) throws Exception
+{
+File toReceive = new File("received.txt");
+FileOutputStream fos = new FileOutputStream(toReceive);
+BufferedOutputStream bos = new BufferedOutputStream(fos);
+DatagramSocket clientSocket = new DatagramSocket();
+InetAddress IPAddress = InetAddress.getByName("localhost");
+byte[] sendData = new byte[1024];
+byte[] receiveData = new byte[1024];
+DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, IPAddress, 5000);
+DatagramPacket receivePacket = new DatagramPacket(receiveData, receiveData.length);
+clientSocket.send(sendPacket);
+clientSocket.receive(receivePacket);
+receiveData = receivePacket.getData();    
+String sent = new String(receiveData);
+fos.write(receiveData,0,sent.length());
+System.out.println("File received from server, with the contents:\n"+sent);
+}
+}
+

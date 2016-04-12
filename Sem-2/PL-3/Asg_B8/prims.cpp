@@ -1,58 +1,124 @@
-#include<bits/stdc++.h>
+#include <iostream>
+#include <omp.h>
 using namespace std;
-#define max 999
-int main()
+class paper
 {
-int n,min=max;
-scanf("%d",&n);
-int arr[n+1][n+1];
-int vi[n+1];
-int from[n+1];
-memset(vi,0,sizeof(vi));
-memset(from,999,sizeof(from));
+public:
+ int v,a[10][10],vis[10];
+ paper()
+ { v=0;
+  for(int i=0;i<10;i++)
+  { vis[i]=-1;
+   //minbox[i]=0;
+   for(int j=0;j<10;j++)
+   {
+    a[i][j]=99;
+   }
+  }
+ }
+ void create()
+ {
+  cout<<"enter number of houses"<<endl;
+  cin>>v;
+  for(int i=0;i<v;i++)
+    {
+    for(int j=i+1;j<v;j++)
+     { cout<<"enter distance from house "<<i<<" to "<<j;
+      cin>>a[i][j];
+      if(a[i][j]==0) a[i][j]=99;
+      a[j][i]=a[i][j];
 
-//ajacency matrix as input
-for(int i=1;i<=n;i++)
-for(int j=1;j<=	n;j++)
-{
-scanf("%d",&arr[i][j]);
-if(arr[i][j]==0)
-arr[i][j]=max;
-}
-vi[1]=1;
-int k,l,c=0;
-while(c!=n-1)
-{                                       //0 2 3 6 5 
-					//2 0 4 0 0 
-				        //3 4 0 1 0
-					//0 0 1 0 7 
-					//5 0 0 7 0
+     }
+    }
+ }
 
-for(int i=1;i<=n;i++)
-{
-min=max;
-if(vi[i]==1)
-for(int j=2;j<=n;j++)
-{
-if(arr[i][j]<min)
-{
-min=arr[i][j];
-k=j;
-l=i;
-}
-}
-}
-arr[l][k]=max;
-vi[k]=1;
-from[k]=l;
-c++;
-}
-cout<<"FROM"<<endl;
-for(int i=1;i<=n;i++)
-cout<<i<<" "<<from[i]<<endl;
-cout<<"VISITED!"<<endl;
-for(int i=1;i<=n;i++)
-cout<<i<<" "<<vi[i]<<endl;
+ void setvis(int d)
+ {
+  vis[d]=d;
+  cout<<d<<" ";
+ }
+ int chkvis(int d)
+  {
+   if(vis[d]==d)return 1;
+   else return 0;
+  }
 
-return 0;
+ void prims()
+ {
+  int min=99,total=0,k,l;
+  for(int i=0;i<v;i++)
+  {
+   for(int j=0;j<v;j++)
+   {
+    if(a[i][j]<min)
+    {
+     min=a[i][j];
+     k=i;
+     l=j;
+    }
+   }
+  }
+  total=min;
+  setvis(k);
+  cout<<"--";
+  setvis(l);
+  cout<<" val:"<<a[k][l]<<endl;
+  for(int m=0;m<v-2;m++)
+  {
+	   min=99;
+	   int minbox[10],tid;
+	   for(int oo=0;oo<10;oo++)
+	    minbox[oo]=0;
+	   omp_set_num_threads(v);
+	   #pragma omp parallel private(tid)
+	   {	
+		tid=omp_get_thread_num();
+		
+		if(chkvis(tid)==1)
+	    	{
+			cout<<"thread"<<tid<<endl;
+	     		for(int j=0;j<v;j++)
+	     			{
+				      if(chkvis(j)==0)
+					{
+	       					if(a[tid][j]<min)
+	       					    {
+							min=a[tid][j];
+	       		 				k=tid;
+							l=j;
+	       					    }
+	      				}
+	     			}
+	    	}
+
+	   }
+	  setvis(k);
+	  cout<<"--";
+	  setvis(l);
+	  cout<<" val:"<<a[k][l]<<endl;
+	  total=total+a[k][l];
+  }
+  cout<<"total: "<<total;
+ }
+
+ void display()
+ {
+ for(int i=0;i<v;i++)
+ {
+  for(int j=0;j<v;j++)
+  {
+   cout<<a[i][j]<<" ";
+  }
+ cout<<endl;
+ }
+
+ }
+};
+int main() {
+ paper p;
+ p.create();
+ p.display();
+ p.prims();
+
+ return 0;
 }

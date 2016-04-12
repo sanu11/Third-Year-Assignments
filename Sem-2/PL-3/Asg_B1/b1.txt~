@@ -1,0 +1,52 @@
+#####script
+import os
+print "current frequency 300Mhz"
+os.system("cpufreq-set -f 300Mhz")
+os.system("python facto123.py 1000") #os.system("python freq2.py 5") for fib
+
+print "Current frequency 600Mhz"
+os.system("cpufreq-set -f 600Mhz")
+os.system("python facto123.py 1000") #os.system("python freq2.py 5") for fib
+
+os.system("cpufreq-set -f 300Mhz")
+
+
+
+
+
+
+######facta
+import sys,time
+def fact(n):
+        ans=1
+        for i in range(1,n+1):
+                ans*=i
+        return ans
+
+if len(sys.argv) > 1:
+        start_time=time.time()
+        fact(int (sys.argv[1]))
+        print "time taken %s seconds" % (time.time()-start_time)
+
+
+#fibonacci:
+import sys,time
+def fact(n):
+        n1=0
+        n2=1
+        print n1
+        print n2
+        for i in range(1,n+1):
+                n3=n1+n2
+                n1=n2
+                n2=n3
+                print n3
+        return n3
+
+if len(sys.argv) > 1:
+        start_time=time.time()
+        fact(int (sys.argv[1]))
+        print "time taken %s seconds" % (time.time()-start_time)
+
+
+

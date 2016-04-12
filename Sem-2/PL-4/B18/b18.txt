@@ -1,0 +1,104 @@
+Name: Neelam Santosh Thube
+Class: TE-2 
+Roll No:3273
+B18: Write a C++/ Python program to generate a Square wave of programmable frequency. Write a function to generate Pole-Zero Diagram using  multicore programming.
+---------------------------------------------------------------------------------------------------------------------------------
+#include<iostream>
+#include<omp.h>
+#include<math.h>
+using namespace std;
+int neg1=0,neg2=0,a=-1,b=-1;
+int main()
+{
+    float A1,B1,C1;
+    float A2,B2,C2;
+    double pole1,zero1,pole2,zero2;
+    cout<<"\n Enter First Equation :";
+    cout<<"\n Enter 'a' :";
+    cin>>A1;
+    cout<<"\n Enter 'b' :";
+    cin>>B1;
+    cout<<"\n Enter 'c' :";
+    cin>>C1;
+    cout<<"\n Enter Second Equation :";
+    cout<<"\n Enter 'a' :";
+    cin>>A2;
+    cout<<"\n Enter 'b' :";
+    cin>>B2;
+    cout<<"\n Enter 'c' :";
+    cin>>C2;
+    float temp1,temp2,numerator1,numerator2;
+    #pragma omp parallel
+    {
+        int threads= omp_get_num_threads();
+        // Zero calculation
+        if(omp_get_thread_num()==0 && a<0)
+      {
+            a++;
+            cout<<"\n Thread A is Caculating Zero. (TID: "<<omp_get_thread_num()<<" )";
+
+            temp1=(B1*B1)-(4*A1*C1);
+            if(temp1<0)
+            {
+                neg1=1;
+                temp1=-temp1;
+            }
+            temp1=sqrt(temp1);
+            numerator1=temp1;
+            if(!neg1)
+            {
+                zero1=(-B1+ numerator1)/2*A1;
+                zero2=(-B1- numerator1)/2*A1;
+            }
+            else
+            {
+                temp1=2*A1;
+            }
+        }
+        // Pole calculation
+        if(omp_get_thread_num()==1 && b<0)
+        {
+            b++;
+            cout<<"\n Thread B is Caculating Pole. (TID: "<<omp_get_thread_num()<<" )";
+            temp2=(B2*B2)-(4*A2*C2);
+            if(temp2<0)
+            {
+                neg2=1;
+                temp2=-temp2;
+            }
+            temp2=sqrt(temp2);
+            numerator2=temp2;
+            if(!neg2)
+            {
+                pole1=(-B2+ numerator2)/2*A2;
+                pole2=(-B2- numerator2)/2*A2;
+            }
+            else
+            {
+                temp2=2*A2;
+            }
+        }
+    }
+    if(!neg1)
+    {
+        cout<<"\n Zero 1 is :"<<zero1;
+        cout<<"\n Zero 2 is :"<<zero2;
+    }
+    else
+    {
+        cout<<"\n Zero 1 is : "<<-B1/temp1<<" +i "<<numerator1/temp1;
+        cout<<"\n Zero 2 is : "<<-B1/temp1<<" -i "<<numerator1/temp1<<endl;
+    }
+    if(!neg2)
+    {
+        cout<<"\n Pole 1 is :"<<pole1;
+        cout<<"\n Pole 2 is :"<<pole2<<endl;
+    }
+    else
+    {
+        cout<<"\n Pole 1 is : "<<-B2/temp2<<" +i "<<numerator2/temp2;
+        cout<<"\n Pole 2 is : "<<-B2/temp2<<" -i "<<numerator2/temp2<<endl;
+    }
+    return 0;
+}
+
