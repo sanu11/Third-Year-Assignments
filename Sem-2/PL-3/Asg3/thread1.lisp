@@ -6,14 +6,13 @@
 (- a b )
 )
 
-(defun mul(a b )
+(defun mul(a b)
 (setf ans 0)
 (setf i -1)
 (loop
 (setf i (+ i 1))
 ;;check if last bit is 1 or 0 if 1 then add b to ans alse dont do anything
-(if (= (logand a 1) 1)(sb-thread:make-thread(lambda() (setf ans (+ ans (ash b i)))(write ans)(write-line ""))))
-(setf a (ash a -1))
+(sb-thread:make-thread(lambda() ( setf c (ash a ( - i)) ) (if (= (logand c 1) 1) ((setf ans (+ ans (ash b i))) (write ans)(write-line "")))))
 (when (= a 0)(return ans))
 ) 
 )
@@ -24,8 +23,8 @@
 
 (write-line "")
 (write-line "Enter Values :")
-(defvar a(read))
-(defvar b(read))
+(setf a(read))
+(setf b(read))
 
 (write-line "")
 (sb-thread:make-thread(lambda()(princ "Addition is : ")(write(add a b))(write-line "")(write-line "")))
