@@ -132,3 +132,4 @@ clEnqueueReadBuffer(command_queue, output, CL_TRUE, 0, sizeof(float) *DATA_SIZE,
 
 
 
+
