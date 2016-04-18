@@ -1,4 +1,4 @@
-#####script
+####script
 import os
 print "current frequency 300Mhz"
 os.system("cpufreq-set -f 300Mhz")
