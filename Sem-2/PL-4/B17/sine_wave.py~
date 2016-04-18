@@ -23,6 +23,7 @@ class DAC:
         bits = int(voltage/100. * self.RESOLUTION)
         self.send_voltage(bits)
 
+
 def test_run():
     dac = DAC()
     # sin(t*f*2*pi) w\ f = frequency
