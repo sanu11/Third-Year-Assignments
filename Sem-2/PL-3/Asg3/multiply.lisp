@@ -16,12 +16,12 @@
 (loop
 (sb-thread:make-thread (lambda()	
 (setf i (+ i 1))
-(setf c (ash a ( - i)) )
+(setf c (ash a ( - i)) )    ;; shift a by counter value
 (if (= (logand c 1) 1) (setf ans (+ ans (ash b i))))
-(setf j ( - j 1))
+(setf j ( - j 1))       ;break when j is 0
 ))
 (when (= j 0)(return ans))
-) ;loop close
+);loop close
 );end fun
 
 
